@@ -22,7 +22,7 @@ See the image below for step-by-step instructions:
 3. **Configure Source**
    - Under "Build and deployment"
    - Source: Select "GitHub Actions"
-   - The workflow file (`.github/workflows/deploy.yml`) will automatically deploy your site on push to main
+   - The workflow file (`.github/workflows/deploy.yml`) will automatically deploy your site on push to the main branch
 
 4. **Wait for Deployment**
    - After the workflow completes successfully, your site will be live at:
