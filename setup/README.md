@@ -6,32 +6,39 @@ This guide will help you enable GitHub Pages for your about-me-template reposito
 
 ### Visual Guide
 
-See the image below for step-by-step instructions:
+See the annotated image below for step-by-step instructions:
 
 ![How to Enable GitHub Pages](./enable-github-pages.svg)
 
 ### Quick Steps
 
-1. **Go to Repository Settings**
-   - Navigate to your repository on GitHub
-   - Click on the "Settings" tab
+**Step 1: Go to Settings**
+- Click on the **Settings** tab in your repository (top navigation bar)
 
-2. **Navigate to Pages Section**
-   - In the left sidebar, scroll down and click "Pages"
+**Step 2: Navigate to Pages**
+- In the left sidebar, scroll down to "Code and automation" section
+- Click on **Pages**
 
-3. **Configure Source**
-   - Under "Build and deployment"
-   - Source: Select "GitHub Actions"
-   - The workflow file (`.github/workflows/deploy.yml`) will automatically deploy your site on push to the main branch
+**Step 3: Configure Source**
+- Under "Build and deployment" → "Source"
+- Select **"GitHub Actions"** from the dropdown
+- ⚠️ **Important:** Do NOT select "Deploy from a branch"
 
-4. **Wait for Deployment**
-   - After the workflow completes successfully, your site will be live at:
-   - `https://YOUR_USERNAME.github.io/YOUR_REPO/`
+**Step 4: Automatic Deployment**
+- Once configured, your site will automatically deploy when you push to the main branch
+- The workflow file (`.github/workflows/deploy.yml`) handles the deployment
+- Your site will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO/`
 
-### Additional Information
+### Why GitHub Actions?
 
 This repository comes with a pre-configured GitHub Actions workflow that will:
-- Build your React application
-- Deploy it to GitHub Pages automatically when you push to the main branch
+- Automatically build your React application
+- Deploy it to GitHub Pages on every push to the main branch
+- No additional configuration needed!
 
-No additional configuration is needed beyond enabling GitHub Pages with "GitHub Actions" as the source.
+### Troubleshooting
+
+If your site doesn't deploy:
+1. Check that you selected "GitHub Actions" as the source (not "Deploy from a branch")
+2. Verify the workflow runs successfully in the "Actions" tab
+3. Make sure you've pushed to the main branch
