@@ -1,25 +1,25 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import Resume from './Resume';
+import ContactInfo from '../../src/pages/ContactInfo';
 
-describe('Resume', () => {
-  it('renders the Resume heading', () => {
-    render(<Resume />);
-    expect(screen.getByText('Resume')).toBeTruthy();
+describe('ContactInfo', () => {
+  it('renders the Contact Info heading', () => {
+    render(<ContactInfo />);
+    expect(screen.getByText('Contact Info')).toBeTruthy();
   });
 
-  it('displays resume content', () => {
-    render(<Resume />);
+  it('displays contact info content', () => {
+    render(<ContactInfo />);
     expect(screen.getByText(/I am a passionate professional with expertise in modern web development/i)).toBeTruthy();
   });
 
   it('mentions cutting-edge technologies', () => {
-    render(<Resume />);
+    render(<ContactInfo />);
     expect(screen.getByText(/cutting-edge technologies and frameworks/i)).toBeTruthy();
   });
 
   it('mentions continuous learning', () => {
-    render(<Resume />);
+    render(<ContactInfo />);
     expect(screen.getByText(/continuous learning and staying up-to-date/i)).toBeTruthy();
   });
 });
