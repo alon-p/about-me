@@ -10,7 +10,7 @@ describe('App', () => {
         <App />
       </BrowserRouter>
     );
-    expect(screen.getByText('John Doe')).toBeTruthy();
+    expect(screen.getByText('Alon Palgy')).toBeTruthy();
   });
 
   it('renders navigation links', () => {
