@@ -6,7 +6,7 @@ function Resume() {
     <div className="max-w-3xl mx-auto p-8">
       <h1 className="text-4xl font-bold mb-8">Resume</h1>
       <PDFDownloadLink document={<ResumePDF />} fileName="resume.pdf">
-        {({ blob, url, loading, error }) =>
+        {({ loading }) =>
           loading ? 'Loading document...' : <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-8 inline-block">Download Resume</button>
         }
       </PDFDownloadLink>
