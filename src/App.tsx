@@ -8,13 +8,13 @@ function App() {
       <nav className="mb-8">
         <ul className="flex gap-4">
           <li>
-            <Link to="/" className="text-blue-600 hover:underline">Home</Link>
+            <Link to="/" className="nav-link">Home</Link>
           </li>
           <li>
-            <Link to="/resume" className="text-blue-600 hover:underline">Resume</Link>
+            <Link to="/resume" className="nav-link">Resume</Link>
           </li>
           <li>
-            <Link to="/contact-info" className="text-blue-600 hover:underline">Contact Info</Link>
+            <Link to="/contact-info" className="nav-link">Contact Info</Link>
           </li>
         </ul>
       </nav>
